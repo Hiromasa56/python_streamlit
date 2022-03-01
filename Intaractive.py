@@ -1,7 +1,5 @@
-from nbformat import write
+#from nbformat import write
 import streamlit as st
-import numpy as np
-import pandas as pd
 from PIL import Image
 import time
 
@@ -13,7 +11,7 @@ bar = st.progress(0)
 for i in range(100):
     leatest_iteration.text(f'Interation {i+1}')
     bar.progress(i+1)
-    time.sleep(0.1)
+    time.sleep(0.01)
 
 st.write('レイアウトとインタラクティブ')
 st.sidebar.write('Interactive Widgets')
